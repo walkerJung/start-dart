@@ -118,3 +118,14 @@
 
 - Dart 함수에서 position parameter 를 사용할때 사용할수 있는 문법이다.
 - 필수 파라미터가 아니라면 대괄호로 묶어주고 타입 뒤에 ? 를 추가해주고 기본값을 할당해주는 식으로 사용할수 있다. (보통은 named parameter 형식을 선호함)
+
+## Dart 의 QQ Operator
+
+    String sayHello(String name){
+        name ??= "junghoon";
+        return name;
+    }
+
+- 삼항연산자 처럼 ?? 를 기준으로 true 일 경우 왼쪽, false 일 경우 오른쪽에 있는 값을 리턴한다.
+- ??= 는 좌항이 null 일경우 = 우측에있는 값을 할당한다.
+- Dart 의 null safety 와 관련있는 문법이다.
