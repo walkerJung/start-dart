@@ -81,7 +81,7 @@
 - 요소가 항상 하나씩만 있어야 되면 set 을 사용한다.
 - unique 할 필요가 없다면 list 를 사용한다.
 
-## Dart 의 Function
+## Dart 의 Position Parameter
 
     String sayHello(String name){
         return "Hello I am $name"
@@ -92,6 +92,7 @@
 - Dart 는 함수명 앞에 리턴 타입을 정의할수 있다.
 - Dart 는 파라미터 앞에 타입을 정의할수 있다.
 - 화살표 함수를 사용하여 함수를 축약할수 있다.
+- 파라미터의 순서가 중요하다.
 
 ## Dart 의 Named Parameter
 
@@ -105,3 +106,4 @@
 
 - Dart 함수에서 파라미터가 많아질 경우 선언부에서 객체형태로 파라미터를 묶어줄수 있다.
 - Dart 함수에서 파라미터에 꼭 값이 들어와야 하는 경우 required 를 선언해주거나, 기본값을 지정해줄수 있다. (null 을 참조하지 않기때문)
+- 파라미터의 순서는 중요하지 않다.
