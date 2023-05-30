@@ -81,6 +81,8 @@
 - 요소가 항상 하나씩만 있어야 되면 set 을 사용한다.
 - unique 할 필요가 없다면 list 를 사용한다.
 
+# Dart Function
+
 ## Dart 의 Position Parameter
 
     String sayHello(String name){
