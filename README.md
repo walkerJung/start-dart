@@ -107,3 +107,14 @@
 - Dart 함수에서 파라미터가 많아질 경우 선언부에서 객체형태로 파라미터를 묶어줄수 있다.
 - Dart 함수에서 파라미터에 꼭 값이 들어와야 하는 경우 required 를 선언해주거나, 기본값을 지정해줄수 있다. (null 을 참조하지 않기때문)
 - 파라미터의 순서는 중요하지 않다.
+
+## Dart 의 Optional Positional Parameter
+
+    String sayHello(String name, Int age, [String? country = "korea"]){
+        return "Hello I am $name, $age, from $country";
+    }
+
+    sayHello("junghoon", 33);
+
+- Dart 함수에서 position parameter 를 사용할때 사용할수 있는 문법이다.
+- 필수 파라미터가 아니라면 대괄호로 묶어주고 타입 뒤에 ? 를 추가해주고 기본값을 할당해주는 식으로 사용할수 있다. (보통은 named parameter 형식을 선호함)
