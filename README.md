@@ -129,3 +129,16 @@
 - 삼항연산자 처럼 ?? 를 기준으로 true 일 경우 왼쪽, false 일 경우 오른쪽에 있는 값을 리턴한다.
 - ??= 는 좌항이 null 일경우 = 우측에있는 값을 할당한다.
 - Dart 의 null safety 와 관련있는 문법이다.
+
+## Dart 의 typedef
+
+    typedef UserInfo = Map<String, String>;
+
+    String userInfo(UserInfo data){
+        return "${data["name"]}";
+    }
+
+    userInfo({"name":"junghoon"});
+
+- 구조화되지 않은 간단한 데이터의 타입을 정의할때 사용한다. (구조화된 데이터는 주로 클래스를 사용)
+- 타입스크립트와 비슷하다.
