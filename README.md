@@ -80,3 +80,15 @@
 - key:value 형태가 아닌 객체라고 이해하면 된다.
 - 요소가 항상 하나씩만 있어야 되면 set 을 사용한다.
 - unique 할 필요가 없다면 list 를 사용한다.
+
+## Dart 의 Function
+
+    String sayHello(String name){
+        return "Hello I am $name"
+    }
+
+    String sayHello(String name) => "Hello I am $name";
+
+- Dart 는 함수명 앞에 리턴 타입을 정의할수 있다.
+- Dart 는 파라미터 앞에 타입을 정의할수 있다.
+- 화살표 함수를 사용하여 함수를 축약할수 있다.
