@@ -92,3 +92,16 @@
 - Dart 는 함수명 앞에 리턴 타입을 정의할수 있다.
 - Dart 는 파라미터 앞에 타입을 정의할수 있다.
 - 화살표 함수를 사용하여 함수를 축약할수 있다.
+
+## Dart 의 Named Parameter
+
+    String sayHello({String name = "junghoon", required Int age}){
+        return "Hello I am $name, $age";
+    }
+
+    void main(){
+        print(sayHello(name : "walkerJung", age: 33))
+    }
+
+- Dart 함수에서 파라미터가 많아질 경우 선언부에서 객체형태로 파라미터를 묶어줄수 있다.
+- Dart 함수에서 파라미터에 꼭 값이 들어와야 하는 경우 required 를 선언해주거나, 기본값을 지정해줄수 있다. (null 을 참조하지 않기때문)
