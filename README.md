@@ -144,3 +144,50 @@
 
 - 구조화되지 않은 간단한 데이터의 타입을 정의할때 사용한다. (구조화된 데이터는 주로 클래스를 사용)
 - 타입스크립트와 비슷하다.
+
+# Dart Class
+
+## Dart 의 Constructor
+
+- Dart 에서 생성자 함수를 만들땐 Class 명과 똑같은 이름을 사용한다.
+
+    Class Player {
+
+        final String name;
+        Int xp;
+
+        Player(String name, Int xp){
+            this.name = name;
+            this.xp = xp;
+        };
+    }
+
+- Class 가 너무 커질경우 생성자 함수를 파라미터 순서에 따라 축약할수 있다.
+
+    Class Player {
+
+        final String name;
+        Int xp;
+
+        Player(this.name, this.xp);
+    }
+
+- 생성자 함수를 다양하게 만들수 있다. 위에서 설명한 Named Parameters, Positional Parameters 를 사용할수 있고, 이런식으로 여러개의 생성자 함수를 만들 경우에는 : 을 사용하여 해당 라인에서 객체를 초기화 하도록 할수 있다.
+
+    Class Player {
+
+        final String name;
+        Int xp;
+
+        Player(this.name, this.xp);
+
+        Player.createHuman({required String name, required Int xp}) : this.name = name,
+          this.xp = xp, 
+          this.tribe = 'human',
+
+        Player.createMonster(String name, Int xp) 
+        : this.name = name,
+          this.xp = xp,
+          this.trice = 'monster',
+
+    }
