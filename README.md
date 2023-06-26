@@ -151,7 +151,7 @@
 
 - Dart 에서 생성자 함수를 만들땐 Class 명과 똑같은 이름을 사용한다.
 
-    Class Player {
+    class Player {
 
         final String name;
         Int xp;
@@ -164,7 +164,7 @@
 
 - Class 가 너무 커질경우 생성자 함수를 파라미터 순서에 따라 축약할수 있다.
 
-    Class Player {
+    class Player {
 
         final String name;
         Int xp;
@@ -174,7 +174,7 @@
 
 - 생성자 함수를 다양하게 만들수 있다. 위에서 설명한 Named Parameters, Positional Parameters 를 사용할수 있고, 이런식으로 여러개의 생성자 함수를 만들 경우에는 : 을 사용하여 해당 라인에서 객체를 초기화 하도록 할수 있다.
 
-    Class Player {
+    class Player {
 
         final String name;
         Int xp;
@@ -191,3 +191,78 @@
           this.trice = 'monster',
 
     }
+
+## Dart 의 Cascade
+
+    void main(){
+        var junghoon = Player(name: 'junghoon', xp: 1200)
+        ..name = 'junghoonjung'
+        ..xp = 25000
+        ..foo();
+    }
+
+- Dart 에선 ..를 사용하여 Cascade 를 사용할수 있다. ..는 Class 를 의미한다.
+
+## Dart 의 Enums
+
+    enum Team { red, blue };
+    enum XPLevel { beginner, medium, pro }
+
+    class Player {
+
+        String name;
+        XPLevel xp;
+        Team team
+
+        Player(this.name, this.xp, this.team);
+
+    }
+
+    void main(){
+        var junghoon = Player(
+            name: 'junghoon',
+            xp: XPLevel.pro,
+            team: Team.blue,
+        )
+    }
+
+- 다른 언어들처럼 Dart 에서도 오타가 날 확률이 있거나 엄격하게 관리해야할 것들이 있다면 enum 을 사용할수 있다.   
+
+ ## Dart 의 abstract
+
+    abstract class Human {
+        void walk();
+    }
+
+    class Player extends Human {
+        String name;
+        Int xp;
+
+        Player(this.name, this.xp);
+
+        void walk(){
+            print('player walking');
+        };
+    }
+
+ - 추상화 클래스를 만들어서 사용할수 있다. 추상화 클래스를 확장시킨 클래스에서는 해당 메서드를 구현하면 된다.
+    
+
+## Dart 의 Inheritance
+
+    Player({required this.name, required String name}) : super(name: name);
+
+- 부모 클래스를 확장하여 사용할때 부모 클래스에 생성자가 있다면 super 키워드를 사용해서 부모 클래스의 생성자 함수에 인자를 전달해야한다.
+
+    @override
+    sayHello(){
+        super.sayHello();
+        print("hello override!");
+    }
+
+- 부모 클래스의 메서드를 super 키워드를 사용하여 불러올수 있고, @override 데코레이터를 사용하여 재선언 할수있다.
+
+
+## Dart 의 Mixin
+
+- 생성자가 업는 클래스를 의미한다. with 키워드로 사용할수 있으며 단순하게 해당 클래스들의 프로퍼티나 메서드를 가져와서 사용하는 용도이다.
