@@ -50,6 +50,17 @@
 
 ## 4. VSCode Settings
 
+- const 를 사용하면 유리한 부분에 const 를 자동으로 붙여줄수 있도록 settings.json 에 아래 내용을 추가한다.
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+
+- 위젯의 트리 형태를 편하게 확인할수 있도록 settings.json 에 아래 내용을 추가한다.
+
+    "dart.previewFlutterUiGuides": true
+    
+
 ## 5. Code Actions
 
 ## 6. Reusable Widgets
