@@ -72,12 +72,13 @@ class App extends StatelessWidget {
                       borderRadius: BorderRadius.circular(45),
                     ),
                     child: Padding(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 20, horizontal: 50),
-                        child: Text(
-                          'Transfer',
-                          style: TextStyle(fontSize: 22),
-                        )),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+                      child: Text(
+                        'Transfer',
+                        style: TextStyle(fontSize: 22),
+                      ),
+                    ),
                   )
                 ],
               )

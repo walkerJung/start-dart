@@ -32,6 +32,22 @@
 
 ## 3. Buttons Section
 
+- Container 위젯은 HTML 의 div 와 같다.
+- Container 위젯의 child 인자를 사용하여 Container 위젯 안에 넣은 위젯을 추가할수 있다.
+
+    Container(
+        child: Text('Hello Flutter'),
+    )
+
+- Container 위젯의 decoration 인자를 사용하여 디자인을 변경할수 있다.
+
+    Container(
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(45),
+        ),
+    )
+
 ## 4. VSCode Settings
 
 ## 5. Code Actions
