@@ -181,7 +181,8 @@
 
         Player(this.name, this.xp);
 
-        Player.createHuman({required String name, required Int xp}) : this.name = name,
+        Player.createHuman({required String name, required Int xp}) 
+        : this.name = name,
           this.xp = xp, 
           this.tribe = 'human',
 
