@@ -73,6 +73,8 @@
 
 ## 7. Cards
 
+- 내부에서 메서드를 사용하고 있는 위젯들은 인자들이 상수로 들어오지 않기 때문에 const 를 빼줘야 한다.
+
 ## 8. Icons and Transforms
 
 ## 9. Reusable Cards
