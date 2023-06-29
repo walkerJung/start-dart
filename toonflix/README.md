@@ -28,6 +28,8 @@
 
 ## 2. Developer Tools
 
+- 개발자 도구를 사용하면 현재 스크린의 tree 정보부터 각각의 위젯 정보들을 확인, 조정 해볼수 있다.
+
 ## 3. Buttons Section
 
 ## 4. VSCode Settings
