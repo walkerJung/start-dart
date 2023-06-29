@@ -63,6 +63,8 @@
 
 ## 5. Code Actions
 
+- 소스코드 리펙토링에 큰 도움을 주는 기능으로, Text 위젯을 Padding 위젯에 넣는다거나 할때 소스코드 왼쪽에 전구모양을 클릭해서 사용할수 있다. "command + ." 로 마우스 클릭 없이 열수 있다.
+
 ## 6. Reusable Widgets
 
 ## 7. Cards
