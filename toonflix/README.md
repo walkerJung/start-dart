@@ -67,6 +67,10 @@
 
 ## 6. Reusable Widgets
 
+- Code Actions 기능중에 Extract Widget 을 사용하면 반복적으로 사용되는 위젯을 class 로 만들어 준다.
+- stl 을 입력하면 Stateless Widget 의 스니펫을 만들수 있다. 
+- build 를 입력하면 build 관련 스니펫을 추가할수 있다.
+
 ## 7. Cards
 
 ## 8. Icons and Transforms
