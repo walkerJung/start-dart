@@ -94,3 +94,5 @@
 - body 에 SingleChildScrollView 위젯을 사용하면 스크롤 가능한 뷰를 사용할수 있다.
 
 ## 10. Code Challenge
+
+- CurrencyCard 위젯에 offsetY 속성을 추가하여 해당 위젯 내부에서 offset 을 조정할수 있도록 변경하였다.
