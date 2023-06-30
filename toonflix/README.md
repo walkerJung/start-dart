@@ -77,6 +77,15 @@
 
 ## 8. Icons and Transforms
 
+- Icon 위젯을 사용하면 flutter SDK 에 있는 다양한 아이콘으로 아이콘을 표현할수 있다.
+- Transform 위젯의 scale 을 사용하여 scale 을 설정할수 있다.
+- Transform 위젯의 translate 를 사용하여 offset 을 설정할수 있다.
+- Container 위젯에 clipBehavior: Clip.hardEdge 를 사용하여 overflow: hidden 과 같은 효과를 낼수 있다.
+
+    Container(
+        clipBehavior: Clip.hardEdge
+    )
+
 ## 9. Reusable Cards
 
 ## 10. Code Challenge
