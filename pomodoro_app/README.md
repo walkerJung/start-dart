@@ -12,3 +12,9 @@
 
 - import 'package:flutter/material.dart'; 를 가져오면 Timer 를 사용할수 있다.
 - 변수 선언시 late 를 사용하여 필요할때 초기화를 진행하도록 한다.
+- Timer 의 periodic 메서드를 사용하여 반복할 시간과 콜백함수를 넘겨줄수 있다. 콜백함수 인자에 필수로 Timer 를 전달해야 한다.
+
+## 3. Pause Play
+
+- Timer 의 cancel 메서드를 사용하여 타이머를 정지시킬수 있다.
+- isRunning 이라는 bool 속성을 추가하여 setState 메서드로 관리하고, 속성에 맞는 UI 를 랜더링하고 이벤트를 바인딩한다.
