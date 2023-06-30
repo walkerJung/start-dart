@@ -80,6 +80,7 @@
 - Icon 위젯을 사용하면 flutter SDK 에 있는 다양한 아이콘으로 아이콘을 표현할수 있다.
 - Transform 위젯의 scale 을 사용하여 scale 을 설정할수 있다.
 - Transform 위젯의 translate 를 사용하여 offset 을 설정할수 있다.
+- Transform 위젯을 사용한 이유는 단순하게 padding, margin 값을 조정하면 Icons 를 감싸고있는 Container 크기가 늘어나기 때문이다.
 - Container 위젯에 clipBehavior: Clip.hardEdge 를 사용하여 overflow: hidden 과 같은 효과를 낼수 있다.
 
     Container(
@@ -87,5 +88,9 @@
     )
 
 ## 9. Reusable Cards
+
+- Class 에 필요한 속성들을 final 로 선언하고 Code Action 을 사용하면 쉽게 생성자 메서드를 만들수 있다.
+- 부모 위젯에 영향이 가지 않도록 디자인을 변경할땐 Transform.translate() 의 Offset 을 설정하는게 좋다.
+- body 에 SingleChildScrollView 위젯을 사용하면 스크롤 가능한 뷰를 사용할수 있다.
 
 ## 10. Code Challenge
