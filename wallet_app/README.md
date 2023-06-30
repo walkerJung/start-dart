@@ -1,8 +1,8 @@
-# toonflix
+# wallet_app
 
 1. brew install --cask flutter
 
-2. flutter create toonflix
+2. flutter create wallet_app
 
 # Hello Flutter
 
