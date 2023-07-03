@@ -104,3 +104,9 @@
 
 - Listview, Listview.builder 는 최적화가 많이 필요한 부분에 주로 사용한다.
 - SizedBox 도 좋지만 margin 이 필요한 경우 Container 위젯 안에 margin 속성을 사용하면 된다.
+
+## 15. Url Launcher
+
+- flutter pub add url_launcher (pub.dev 참조)
+- flutter App 에서 브라우저를 열기 위해 사용하는 의존성 이다.
+- ios > Runner > Info.plist 를 수정하고 앱을 재구동 해준다. (pub.dev 참조)
