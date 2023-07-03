@@ -60,3 +60,11 @@
 ## 7. ListView
 
 - Listview 의 builder 를 사용하면 Row 나 Column 보다 리스트를 구현하는데 편하다.
+- builder 를 사용하면 실제 뷰에 보이는것들만 렌더링하게 된다.
+- separatorBuilder 는 아이템들 사이사이에 구분자를 넣어주는데 다양한것들이 들어간다.
+
+## 8. Webtoon Card
+
+- ListView 위젯에 padding 을 줄수 있다.
+- 부모, 자식 위젯이 관여될 경우 clipBehavior: Clip.hardEdge 를 사용하면 된다.
+- Container 의 decoration 에서 BoxDecoration boxShadow 를 설정할때 눈에 띄는 못생긴 색으로 먼저 진행하는게 확인하기 편하다.
