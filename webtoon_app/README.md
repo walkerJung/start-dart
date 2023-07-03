@@ -95,3 +95,12 @@
 
 - Stateful Widget 에서 파라미터로 전달된 인자를 사용할땐 widget.~ 로 부모 Class 를 참조해야 한다.
 - widget 객체에서 원하는 인자를 사용하여 initState() 안에서 처리한다.
+
+## 13. Detail info
+
+- initState 에서 할당한 변수를 FutureBuilder 로 렌더링
+
+## 14. Episodes
+
+- Listview, Listview.builder 는 최적화가 많이 필요한 부분에 주로 사용한다.
+- SizedBox 도 좋지만 margin 이 필요한 경우 Container 위젯 안에 margin 속성을 사용하면 된다.
