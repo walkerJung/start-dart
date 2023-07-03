@@ -14,7 +14,7 @@
 - js 와 마찬가지로 async 함수 내에서 await 를 사용할수 있다.
 - Future 타입과 async/await 는 같이 쓰인다고 볼수 있다.
 
-## 3. fronJson
+## 3. fromJson
 
 - json 은 dynamic 타입으로 받으면 된다.
 - json 정보로 초기화 해주는 model class 를 만든다.
@@ -31,3 +31,9 @@
 - response(JSON) 으로 Model 을 만든다. json 의 타입은 선언 안해도 되지만 List<dynamic> 이다.
 - response.body 를 for in 으로 돌려서 Model 생성자에 전달해준다.
 - 각각의 인스턴스들을 add() 해서 리턴해준다.
+
+## 5. waitForWebToons
+
+- 데이터를 불러올 화면에서 initState 를 사용하여 ApiService 를 호출한다.
+- ApiService 를 호출할때에도 당연히 async/await 를 사용해야한다.
+- 데이터 로드가 끝나면 setState 를 사용하여 다시 랜더링 시킨다.
