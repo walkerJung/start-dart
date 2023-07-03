@@ -94,3 +94,4 @@
 ## 12. Futures
 
 - Stateful Widget 에서 파라미터로 전달된 인자를 사용할땐 widget.~ 로 부모 Class 를 참조해야 한다.
+- widget 객체에서 원하는 인자를 사용하여 initState() 안에서 처리한다.
