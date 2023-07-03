@@ -110,3 +110,11 @@
 - flutter pub add url_launcher (pub.dev 참조)
 - flutter App 에서 브라우저를 열기 위해 사용하는 의존성 이다.
 - ios > Runner > Info.plist 를 수정하고 앱을 재구동 해준다. (pub.dev 참조)
+
+## 16. Favorites
+
+- flutter pub add shared_preferences (pub.dev 참조)
+- flutter App 에 저장소를 만들수 있는 의존성 이다.
+- SharedPreferences 타입의 변수를 late 로 선언하고, 할당하는 함수를 만들어서 initState() 내부에서 호출한다.
+- SharedPreferences 의 인스턴스 메서드를 사용하여 CRUD 가 가능하다.
+- 이벤트 내부에 UI 리랜더링이 필요한 부분에는 꼭 setState() 를 사용한다.
