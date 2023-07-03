@@ -37,3 +37,21 @@
 - 데이터를 불러올 화면에서 initState 를 사용하여 ApiService 를 호출한다.
 - ApiService 를 호출할때에도 당연히 async/await 를 사용해야한다.
 - 데이터 로드가 끝나면 setState 를 사용하여 다시 랜더링 시킨다.
+
+## 6. FutureBuilder
+
+- Scaffold 에 FutureBuilder 위젯을 사용하면 initState 와 setState 를 사용하지 않고 data fetching 을 할수있다.
+- 데이터 관련 Service 를 호출해서 변수에 할당한다.
+- FutureBuilder 의 future 에 해당 변수를 인자로 넘겨준다.
+
+    FutureBuilder(
+        future: webtoons
+    )
+
+- FutureBuilder 의 builder 메서드를 사용하여 데이터를 랜더링한다. snapshot 은 Future 의 상태를 의미한다.
+
+    FutureBuilder(
+        builder: (context, snapshot) {
+            If(snapshot.hasData){}
+        }
+    )
