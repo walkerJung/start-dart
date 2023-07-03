@@ -41,6 +41,7 @@
 ## 6. FutureBuilder
 
 - Scaffold 에 FutureBuilder 위젯을 사용하면 initState 와 setState 를 사용하지 않고 data fetching 을 할수있다.
+- FutureBuilder 는 Future 의 값을 기다리고 데이터가 존재하는지 알려준다.
 - 데이터 관련 Service 를 호출해서 변수에 할당한다.
 - FutureBuilder 의 future 에 해당 변수를 인자로 넘겨준다.
 
@@ -55,3 +56,7 @@
             If(snapshot.hasData){}
         }
     )
+
+## 7. ListView
+
+- Listview 의 builder 를 사용하면 Row 나 Column 보다 리스트를 구현하는데 편하다.
