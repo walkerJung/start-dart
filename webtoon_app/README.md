@@ -68,3 +68,16 @@
 - ListView 위젯에 padding 을 줄수 있다.
 - 부모, 자식 위젯이 관여될 경우 clipBehavior: Clip.hardEdge 를 사용하면 된다.
 - Container 의 decoration 에서 BoxDecoration boxShadow 를 설정할때 눈에 띄는 못생긴 색으로 먼저 진행하는게 확인하기 편하다.
+
+## 9. Detail Screen
+
+- GestureDetector 위젯을 사용하면 사용자의 행동에 따른 이벤트를 추가할수 있다.
+- onTap 안에 Navigator 위젯을 사용하여 화면 전환을 할수 있다.
+- MaterialPageRoute 의 builder 를 사용해서 보여줄 위젯을 선택할수 있다.
+
+    MaterialPageRoute(
+        builder: (context) => DetailScreen(),
+        fullScreenDialog: true,
+    )
+
+- fullScreenDialog: true 를 설정하면 아래에서 올라오는 팝업 형식으로 화면 이동이 된다. 이 설정에 따라 아이콘이 뒤로가기, 닫기 로 보여진다.
