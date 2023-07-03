@@ -90,3 +90,7 @@
 ## 11. ApiService
 
 - List 안에 Model 을 넣어 반환할때의 리턴 타입 설정을 항상 주의하자.
+
+## 12. Futures
+
+- Stateful Widget 에서 파라미터로 전달된 인자를 사용할땐 widget.~ 로 부모 Class 를 참조해야 한다.
